@@ -11,29 +11,36 @@
 - Input validation
 - Basic loading and error handling
 
+## Requirements
+- Python 3.x
+- Node.js 20+
+
 ## Setup Instructions
 
 ### Backend
+```bash
 cd backend
 python -m venv venv
 source venv/bin/activate
 pip install django djangorestframework django-cors-headers
 python manage.py migrate
 python manage.py runserver
+```
 
 ### Frontend
+```bash
 cd frontend
 npm install
 npm run dev
+```
 
 ## API Endpoints
-
-GET /tasks/  
-POST /tasks/  
-GET /tasks/{id}/  
-PUT /tasks/{id}/  
-PATCH /tasks/{id}/  
-DELETE /tasks/{id}/  
+- GET /tasks/
+- POST /tasks/
+- GET /tasks/{id}/
+- PUT /tasks/{id}/
+- PATCH /tasks/{id}/
+- DELETE /tasks/{id}/
 
 ## Notes
 - Used ViewSet instead of ModelViewSet as required
